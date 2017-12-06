@@ -1,0 +1,45 @@
+Link : https://github.com/stephaniewismer/FirstRepository.git
+
+cd Desktop
+git clone https://github.com/stephaniewismer/FirstRepository.git
+git add student.py
+git add module.py
+git add moduleElement.py
+git commit -m "Add Files"
+git push origin master
+
+git branch test
+git chekcout test
+echo "Hello World" >> test.py
+gti add test.py
+git commit -m "Add test.py file"
+git push origin test
+git chekcout master
+git merge test
+git push origin master
+git log --graph -p (der angegebene Befehl hat nicht funktioniert)
+
+* commit 295eb809392aa26e3aa0d768f6bac0db5bc36bf2
+| Author: stephaniewismer <stephaniewismer@users.noreply.github.com>
+| Date:   Wed Dec 6 21:13:20 2017 +0100
+|
+|     Add test.py file
+|
+| diff --git a/test.py b/test.py
+| new file mode 100644
+| index 0000000..557db03
+| --- /dev/null
+| +++ b/test.py
+| @@ -0,0 +1 @@
+| +Hello World
+|
+* commit 1b35bc3f6ce4dda01455ef108e898a9e4c6b145a
+| Author: stephaniewismer <stephaniewismer@users.noreply.github.com>
+| Date:   Wed Dec 6 20:16:04 2017 +0100
+|
+|     Add Files
+|
+| diff --git a/module.py b/module.py
+| new file mode 100755
+| index 0000000..60c0b36
+:
